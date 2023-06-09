@@ -1,15 +1,18 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "index": "⭐ Welcome",
+  "status": "⏳ Status",
+  "faq": "❓FAQs",
+  "novels": "📖 Novels",
+  "short_story_collection": "📚 Short Story Collections",
+  "non_fiction": "📝 Non-Fiction",
   "about": {
     "title": "About",
     "type": "page"
   },
   "contact": {
-    "title": "Contact ↗",
+    "title": "Reddit ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://www.reddit.com/r/murakami/",
     "newWindow": true
   }
 }

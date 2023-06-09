@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: first;
+  gap: 15px;
+  margin: 20px;
+}
+
+.description span {
+  font-weight: bold;
+  text-align: justify;
+  display: inline-block;
+}
