@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { useState } from 'react';
 import styles from './BookInfo.module.css';
 
 interface Props {
@@ -10,19 +9,20 @@ interface Props {
   description: string;
 }
 
-export default function BookInfo(props: Props) {
+export default function BookInfo({
+  src,
+  alt,
+  width = 200,
+  height = 200,
+  description,
+}: Props) {
   return (
     <div className={styles.content}>
-      <Image
-        src={props.src}
-        alt={props.alt}
-        width={props.width}
-        height={props.height}
-      />
+      <Image src={src} alt={alt} width={width} height={height} />
 
       <div className={styles.description}>
         <span>Description</span>
-        <p>{props.description}</p>
+        <p>{description}</p>
       </div>
     </div>
   );

@@ -12,3 +12,19 @@
   text-align: justify;
   display: inline-block;
 }
+
+/* Mobile */
+@media (max-width: 700px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
