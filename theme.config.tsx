@@ -2,6 +2,40 @@ import React from 'react';
 import { DocsThemeConfig } from 'nextra-theme-docs';
 
 const config: DocsThemeConfig = {
+  head: (
+    <>
+      <meta charSet='utf-8' />
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <meta property='og:title' content='Haruki Murakami Database' />
+      <meta
+        name='description'
+        content='Website to find all pop culture references mentioned in Haruki Murakami works.'
+      />
+      <meta name='author' content='Sara Makishti' />
+      <meta
+        property='og:url'
+        content='https://haruki-murakami-database.vercel.app/'
+      />
+      <meta property='og:type' content='website' />
+      <meta property='og:locale' content='en_US' />
+      <script
+        async
+        src='https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}'
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
+    </>
+  ),
   useNextSeoProps() {
     return {
       titleTemplate: '%s | Haruki Murakami Database',
