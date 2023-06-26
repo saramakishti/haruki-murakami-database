@@ -20,7 +20,7 @@ const config: DocsThemeConfig = {
       <meta property='og:locale' content='en_US' />
       <script
         async
-        src='https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}'
+        src='https://www.googletagmanager.com/gtag/js?id=G-8TXCP6MZHB'
       />
       <script
         dangerouslySetInnerHTML={{
